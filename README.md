@@ -2,6 +2,10 @@
 
 Teleporter aims to be the fastest way to jump between open tabs in your web-browser.
 
+## Install
+
+The extension currently doesn't live in Firefox Addons website or Chrome Web Store. You can [install it on Firefox with this link](https://github.com/bjesus/teleporter/releases/download/0.1/tab_teleporter-0.1-fx.xpi).
+
 ## How to use
 
 1. Open the Teleporter panel using the "play" button of your keyboard
