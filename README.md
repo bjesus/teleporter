@@ -1,16 +1,16 @@
 # Tab Teleporter
 
-Teleporter aims to be the fastest way to jump between open tabs in your web-browser.
+Teleporter is the fastest way to jump between open tabs in your web browser.
 
 ## Install
 
-The extension currently doesn't live in Firefox Addons website or Chrome Web Store. You can [install it on Firefox with this link](https://github.com/bjesus/teleporter/releases/download/0.1/tab_teleporter-0.1-fx.xpi).
+The extension currently can't be installed from Firefox Addons website or Chrome Web Store. You can [install it on Firefox with this link](https://github.com/bjesus/teleporter/releases/download/0.1/tab_teleporter-0.1-fx.xpi).
 
 ## How to use
 
-1. Open the Teleporter panel using the "play" button of your keyboard
-2. Filter through the list with the simple fuzzy search input box
-3. One there's only one result, Teleporter will open it automatically
+1. Open the Teleporter panel using the "play" button in your keyboard
+2. Filter through the list with the simple (fuzzy)search input box
+3. Once there's only one result left, Teleporter will open it automatically
 4. You can always type the tab number and Teleporter will open it even if more results are visible
 
 ## Why play button
@@ -19,4 +19,4 @@ WebExtension requires two keys shortcuts except for the keyboard media buttons t
 
 ## Now I don't need my tabs bar
 
-That's the point! On Firefox you hide it completely [by editing your userChrome.css](https://superuser.com/questions/1268732/how-to-hide-tab-bar-tabstrip-in-firefox-57-quantum). I have no idea if it's possible on other browsers.
+That's the point! On Firefox you can hide it completely [by editing your userChrome.css](https://superuser.com/questions/1268732/how-to-hide-tab-bar-tabstrip-in-firefox-57-quantum). I don't know how to do it on other browsers.
