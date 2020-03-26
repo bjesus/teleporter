@@ -1,4 +1,4 @@
-# Tab Teleporter
+# 🌀 Teleporter
 
 Teleporter is the fastest way to jump between open tabs in your web browser.
 
