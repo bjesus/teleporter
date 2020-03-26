@@ -1,0 +1,31 @@
+{
+  "browser_specific_settings": {
+    "gecko": {
+      "strict_min_version": "58.0a1"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "button/button.svg"
+    },
+    "browser_style": true,
+    "default_title": "Teleporter",
+    "default_popup": "tabs.html"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "MediaPlayPause"
+      }
+    }
+  },
+  "description": "The fastest way to jump between your tabs.",
+  "homepage_url": "https://github.com/bjesus/teleporter",
+  "manifest_version": 2,
+  "name": "Tab Teleporter",
+  "permissions": ["tabs"],
+  "version": "1.0"
+}

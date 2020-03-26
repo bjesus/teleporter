@@ -1,0 +1,57 @@
+html,
+body {
+  max-width: 350px;
+  width: 350px;
+  overflow: hidden;
+  background: #333;
+  color: white;
+}
+
+.inputWrapper {
+  padding: 1rem;
+}
+.panel input {
+  width: 100%;
+}
+
+.tab-holder {
+  padding: 0.3rem;
+  border-top: 0.6px solid grey;
+  display: flex;
+  width: 100%;
+}
+
+.tab-holder.active-tab {
+  background: #555;
+}
+
+.tab-holder.attention-tab {
+  background: #c20500;
+}
+
+.tab-holder span {
+  margin-right: 0.8rem;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1.2rem;
+}
+
+.tab-holder img {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+  margin-right: 0.8rem;
+  display: inline-block;
+}
+
+.tab-holder a {
+  flex-grow: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-decoration: none;
+  display: block;
+  color: white;
+  overflow-y: hidden;
+}
