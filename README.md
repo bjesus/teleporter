@@ -15,7 +15,7 @@ The extension currently can't be installed from Firefox Addons website or Chrome
 
 ## Why play button
 
-WebExtension requires two keys shortcuts except for the keyboard media buttons that can be used alone. To be the fastest way to jump between tabs, Teleporter needs to be one click away. If you don't have the key in your keyboard, you'd need to set up some key remapping. On Linux, try editing `/usr/share/X11/xkb/symbols/inet` or `/usr/share/X11/xkb/symbols/evdev` and configure whatever key you want as `XF86AudioPlay`. I haven't tried it but it seems that you can use [Keyboard Layout Creator](https://www.microsoft.com/en-us/download/details.aspx?id=22339) on Windows and [Karabiner](https://karabiner-elements.pqrs.org/) on MacOS.
+WebExtension requires two keys shortcuts [except for the keyboard media buttons](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/commands#Media_keys) that can be used alone. To be the fastest way to jump between tabs, Teleporter needs to be one click away. If you don't have the key in your keyboard, you'd need to set up some key remapping. On Linux, try editing `/usr/share/X11/xkb/symbols/inet` or `/usr/share/X11/xkb/symbols/evdev` and configure whatever key you want as `XF86AudioPlay`. I haven't tried it but it seems that you can use [Keyboard Layout Creator](https://www.microsoft.com/en-us/download/details.aspx?id=22339) on Windows and [Karabiner](https://karabiner-elements.pqrs.org/) on MacOS.
 
 ## Now I don't need my tabs bar
 
