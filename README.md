@@ -13,7 +13,7 @@ The extension currently can't be installed from Firefox Addons website or Chrome
 3. Once there's only one result left, Teleporter will open it automatically
 4. You can always type the tab number and Teleporter will open it even if more results are visible
 
-# Configure activation button
+## Configure activation button
 
 If you really don't want to use the play button, you can configure any other key combination you want. Go to `about:addons`, and on the right of "Manage your extensions" open the cogs menu and choose "Manage Extensions Shortcuts". You can then pick any other regular shortcut you want.
 
