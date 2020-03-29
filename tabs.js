@@ -63,6 +63,26 @@ function listTabs(filter) {
   });
 }
 
+document.onkeydown = function(event) {
+  if (event.keyCode == 38) {
+    const currentTab = document.getElementsByClassName("active-tab")[0];
+    const prevTabId = +currentTab.previousSibling
+      .getElementsByTagName("a")[0]
+      .getAttribute("href");
+    var updating = browser.tabs.update(prevTabId, {
+      active: true
+    });
+  }
+  if (event.keyCode == 40) {
+    const currentTab = document.getElementsByClassName("active-tab")[0];
+    const nextTabId = +currentTab.nextSibling
+      .getElementsByTagName("a")[0]
+      .getAttribute("href");
+    browser.tabs.update(nextTabId, {
+      active: true
+    });
+  }
+};
 
 browser.tabs.onCreated.addListener(updateList);
 browser.tabs.onRemoved.addListener(updateList);
