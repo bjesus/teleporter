@@ -4,6 +4,12 @@ function fuzzyMatch(pattern, str) {
   return re.test(str);
 }
 
+const filterInput = document.getElementById("filterInput");
+
+function updateList() {
+  filterInput.dispatchEvent(new Event("input", { bubbles: true }));
+}
+
 /**
  * listTabs to switch to
  */
@@ -57,7 +63,12 @@ function listTabs(filter) {
   });
 }
 
-document.getElementById("filterInput").oninput = function() {
+
+browser.tabs.onCreated.addListener(updateList);
+browser.tabs.onRemoved.addListener(updateList);
+browser.tabs.onUpdated.addListener(updateList);
+
+filterInput.oninput = function() {
   const numbers = this.value.replace(/\D/g, "");
   console.log(numbers);
   if (numbers.length > 1) {
