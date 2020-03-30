@@ -38,7 +38,11 @@ function listTabs(filter) {
         }
         let tabImg = document.createElement("img");
         tabImg.classList.add("favicon");
-        tabImg.setAttribute("src", tab.favIconUrl);
+        if (tab.favIconUrl) {
+          tabImg.setAttribute("src", tab.favIconUrl);
+        } else {
+          tabImg.setAttribute("src", "icons/defaultFavicon.svg");
+        }
         tabHolder.appendChild(tabImg);
 
         let tabCode = document.createElement("span");

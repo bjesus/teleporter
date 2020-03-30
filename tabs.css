@@ -41,6 +41,8 @@ body {
   height: 16px;
   min-width: 16px;
   min-height: 16px;
+  -moz-context-properties: fill;
+  fill: #fff;
   margin-right: 0.8rem;
   display: inline-block;
 }
