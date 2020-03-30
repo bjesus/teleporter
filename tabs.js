@@ -37,6 +37,7 @@ function listTabs(filter) {
           tabHolder.classList.add("active-tab");
         }
         let tabImg = document.createElement("img");
+        tabImg.classList.add("favicon");
         tabImg.setAttribute("src", tab.favIconUrl);
         tabHolder.appendChild(tabImg);
 
@@ -49,6 +50,15 @@ function listTabs(filter) {
         tabLink.setAttribute("href", tab.id);
         tabLink.classList.add("switch-tabs");
         tabHolder.appendChild(tabLink);
+
+        let closeImg = document.createElement("img");
+        closeImg.classList.add("closeButton");
+        closeImg.setAttribute("src", "icons/close-icon.svg");
+        closeImg.onclick = function(event) {
+          const tabId = +event.target.previousSibling.getAttribute("href");
+          browser.tabs.remove(tabId);
+        };
+        tabHolder.appendChild(closeImg);
 
         currentTabs.appendChild(tabHolder);
       }

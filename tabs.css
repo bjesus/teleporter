@@ -36,7 +36,7 @@ body {
   font-size: 1.2rem;
 }
 
-.tab-holder img {
+.tab-holder img.favicon {
   width: 16px;
   height: 16px;
   min-width: 16px;
@@ -54,4 +54,25 @@ body {
   display: block;
   color: white;
   overflow-y: hidden;
+}
+
+.tab-holder img.closeButton {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+  display: inline-block;
+  opacity: 0;
+  -moz-context-properties: fill;
+  fill: #fff;
+  cursor: pointer;
+}
+
+.tab-holder:hover img.closeButton {
+  opacity: 1;
+}
+
+.tab-holder img.closeButton:hover {
+  background: #666;
+  border-radius: 3px;
 }
