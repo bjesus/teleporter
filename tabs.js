@@ -20,20 +20,23 @@ function listTabs(filter) {
   browser.tabs.query({ currentWindow: true }).then((tabs) => {
     let tabsList = document.getElementById("tabs-list");
     let currentTabs = document.createDocumentFragment();
-    let counter = Math.ceil(tabs.length / 10) + 2;
-
+    let counter = Math.ceil(tabs.length / 9);
     tabsList.textContent = "";
     let matching = 0;
-
+    const tabNumber = {};
+    for (const tab of tabs) {
+      tabNumber[tab.id] = counter;
+      counter++;
+    }
     let filteredTabs;
     if (filter) {
-      fuzzySearch = fuzzysort.go(filter, tabs, { key: "title" });
+      const fuzzySearch = fuzzysort.go(filter, tabs, { key: "title" });
       filteredTabs = fuzzySearch.map((o) => o.obj.id);
       tabs.sort(function (a, b) {
         try {
           return (
-            fuzzySearch.find((t) => t.obj.id == b.id).score -
-            fuzzySearch.find((t) => t.obj.id == a.id).score
+            fuzzySearch.findIndex((t) => t.obj.id == a.id) -
+            fuzzySearch.findIndex((t) => t.obj.id == b.id)
           );
         } catch (e) {
           return true;
@@ -64,7 +67,7 @@ function listTabs(filter) {
         tabHolder.appendChild(tabImg);
 
         let tabCode = document.createElement("span");
-        tabCode.textContent = counter;
+        tabCode.textContent = tabNumber[tab.id];
         tabHolder.appendChild(tabCode);
 
         let tabLink = document.createElement("a");
@@ -84,8 +87,6 @@ function listTabs(filter) {
 
         currentTabs.appendChild(tabHolder);
       }
-
-      counter += 1;
     }
 
     tabsList.appendChild(currentTabs);

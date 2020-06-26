@@ -34,6 +34,9 @@ body {
   font-weight: bold;
   font-family: monospace;
   font-size: 1.2rem;
+  min-width: 3rem;
+  display: block;
+  text-align: center;
 }
 
 .tab-holder img.favicon {
