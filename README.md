@@ -9,11 +9,11 @@ The extension currently can't be installed from Firefox Addons website or Chrome
 ## How to use
 
 1. Open the Teleporter panel using the "play" button in your keyboard
-2. Filter through the list with simple fuzzy search input box (thanks [fuzzysort](https://github.com/farzher/fuzzysort))
+2. Filter through the list with the fuzzy search input box (thanks [fuzzysort](https://github.com/farzher/fuzzysort))
 3. Once there's only one result left, Teleporter will open it automatically
 4. You can always type the tab number and Teleporter will open it even if more results are visible
-5. Prepend 0 a tab number to close it
-6. Prepend \* to your search to also show and filter through hidden tabs
+5. Prepend `0` a tab number to close it
+6. Prepend `*` to your search to also show and filter through hidden tabs
 
 ## Configure activation button
 
